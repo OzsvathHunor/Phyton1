@@ -1,3 +1,4 @@
+#-*- coding: utf-8-*-
 x = int(raw_input("Enter the value for x: "))
 print x
 
@@ -8,7 +9,7 @@ operation = raw_input("Choose math operation (+, -, *, /: ")
 print operation
 
 if operation == "+":
-    print "osszeadas"
+    print "osszeadás"
     print x + y
 elif operation == "-":
     print "kivonas"
