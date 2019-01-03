@@ -24,15 +24,26 @@ class Alkalmazott(Person):
 
 
 class Ugyfel(Person):
-
     def idopont_foglalas(self):
         print "Időpont foglalva " + self.get_full_name() + " számára."
+
+
+class Magyar(Person):
+    def get_full_name(self):
+        return self.last_name + " " + self.first_name
 
 
 marissa = Alkalmazott("Marissa", "Mayer", 83483204032, 2005, "marissa@yahoo.com", 65165489454651651651651)
 
 bruce = Ugyfel("Bruce", "Wayne", 902432309443, 1939, "bruce@batman.com")
 
+hunor = Magyar("Hunor", "Ozsváth", 123456789, 1992, "en@dal.com")
+
 bruce.idopont_foglalas()
 print marissa.szamlaszam
+print hunor.get_full_name()
+print ""
 
+emberek = {marissa, hunor}
+for ember in emberek:
+    print ember.get_full_name()
