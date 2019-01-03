@@ -24,8 +24,6 @@ class Alkalmazott(Person):
 
 
 class Ugyfel(Person):
-    def __init__(self, first_name, last_name, phone_number, birth_year, email):
-        Person.__init__(self, first_name, last_name, phone_number, birth_year, email)
 
     def idopont_foglalas(self):
         print "Időpont foglalva " + self.get_full_name() + " számára."
