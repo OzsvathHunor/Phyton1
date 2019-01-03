@@ -37,3 +37,4 @@ bruce = Ugyfel("Bruce", "Wayne", 902432309443, 1939, "bruce@batman.com")
 
 bruce.idopont_foglalas()
 print marissa.szamlaszam
+
